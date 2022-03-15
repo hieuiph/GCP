@@ -1,9 +1,3 @@
-Selecting the Top-1 Result in BigQuery
-
-Problem
-You want to return the top item from a sorted list in a BigQuery query, but your data
-set is particularly large and the query is slow.
-
 1. You can start by using the standard ROW_NUMBER() OVER() windowing function and
 then filtering based on the first item. However, if your data set is particularly large
 and performing slowly because you’re forcing a full sort of the data set, you can apply
